@@ -1,0 +1,10 @@
+
+	<div class="row">
+
+		<% @stuff.each do |book| %>
+		  <h2> <%= link_to  book.title, project_path(book) %> </h2>  
+		<% end %>
+
+	</div>
+	
+<%= link_to "Add Project", new_project_path %>

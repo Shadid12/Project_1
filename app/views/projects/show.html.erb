@@ -1,0 +1,11 @@
+<div class="book-info">
+
+			<h2 ><%= @stuff.title %></h2>
+			<h3 > <%= @stuff.author %></h3>
+			<p><%= @stuff.description %></p>
+
+</div>
+
+<%= link_to "Back", root_path, class: "btn btn-custom" %>
+<%= link_to "Edit", edit_project_path(@stuff), class: "btn btn-custom" %>
+<%= link_to "Delete", project_path(@stuff), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-custom" %>
